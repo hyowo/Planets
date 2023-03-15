@@ -5,12 +5,13 @@ public static class MauiProgram
 	public static MauiApp CreateMauiApp()
 	{
 		var builder = MauiApp.CreateBuilder();
-		builder
+		_ = builder
 			.UseMauiApp<App>()
 			.ConfigureFonts(fonts =>
 			{
-				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+				fonts.AddFont("ChakraPetch-Bold.ttf", "BoldFont");
+				fonts.AddFont("ChakraPetch-SemiBold.ttf", "SemiBoldFont");
+				fonts.AddFont("ChakraPetch-Regular.ttf", "RegularFont");
 			});
 
 		return builder.Build();
