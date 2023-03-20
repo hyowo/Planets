@@ -53,15 +53,40 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\dotnet_bot.svg" />
+	  <None Remove="Resources\Images\earth.svg" />
+	  <None Remove="Resources\Images\imgback.png" />
+	  <None Remove="Resources\Images\imgexplore.png" />
+	  <None Remove="Resources\Images\imgfavorite.png" />
+	  <None Remove="Resources\Images\imgmenu.png" />
+	  <None Remove="Resources\Images\imgsearch.png" />
+	  <None Remove="Resources\Images\jupiter.svg" />
+	  <None Remove="Resources\Images\mars.svg" />
+	  <None Remove="Resources\Images\mercury.svg" />
+	  <None Remove="Resources\Images\neptune.svg" />
+	  <None Remove="Resources\Images\saturn.svg" />
+	  <None Remove="Resources\Images\uranus.svg" />
+	  <None Remove="Resources\Images\venus.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <PackageReference Include="Microsoft.UI.Xaml" Version="2.8.2" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <Folder Include="Resources\Fonts\" />
-	  <Folder Include="Resources\Images\" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\NavigationPage.xaml.cs">
+	    <DependentUpon>NavigationPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\NavigationPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\PlanetsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
