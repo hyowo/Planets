@@ -5,11 +5,12 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <!--Colors-->
-    <LinearGradientBrush x:Key="FrameBackgroundColor" StartPoint="0,0" EndPoint="1,0">
-        <LinearGradientBrush.GradientStops>
-            <GradientStop Offset="0" Color="#999" />
-            <GradientStop Offset="1" Color="#444" />
-        </LinearGradientBrush.GradientStops>
+    <Color x:Key="BorderColor">Transparent</Color>
+    <Color x:Key="DarkTextColor">#D0D0D0</Color>
+    <Color x:Key="ButtonBackgroundColor">#eb5757</Color>
+    <Color x:Key="BackgroundColor">#202020</Color>
+    <LinearGradientBrush x:Key="FrameBackgroundColor" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#454545" Offset="0" />
+        <GradientStop Color="#202020" Offset="1.0"/>
     </LinearGradientBrush>
-
 </ResourceDictionary>
